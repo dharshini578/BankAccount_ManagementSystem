@@ -198,4 +198,3 @@ Reason: Loan rejection: Customer has no active account in the bank.
 | **DBMS - Aggregation & Join** | Analytical branch report | `BankDAO.java` (`getBranchReport`) | Uses `LEFT JOIN`, `COUNT()`, `SUM()`, and `GROUP BY b.branch_id, b.branch_name`. |
 
 ---
-**Answer:** `ON DELETE CASCADE` automatically deletes dependent child records (such as accounts or loans) when the associated parent record (such as a customer or branch) is deleted, preserving referential integrity without orphan records.
